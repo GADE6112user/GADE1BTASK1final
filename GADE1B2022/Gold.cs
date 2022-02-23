@@ -8,16 +8,24 @@ namespace GADE1B2022
 {
     public class Gold : Item
     {
-        private int goldDrop;
-        Random rnd = new Random();
-        goldDrop = rnd.NextInt(2,3); // ???
-        public Item GoldDrop
+        private int x;
+        private int y;
+        private int goldDropCount;
+        private Random rnd = new Random();
+        //public TileType goldTT;
+        public int GetRandomNumber()
         {
-            get { return goldDrop } // 
+            return rnd.Next(1,6);
         }
-        public Gold()
+        
+        public int getGoldDropCount
         {
-            goldDrop = 0;
+            get { return goldDropCount; }// 
+        }
+        public Gold(int X, int Y)
+        {
+            x = X;
+            y = Y;
         }
 
     }

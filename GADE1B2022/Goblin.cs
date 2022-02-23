@@ -10,12 +10,19 @@ namespace GADE1B2022
     {
         private int hp = 10;
         private int damage = 1;
+        private int x;
+        private int y;
+        public delegate void Del(string message);
         public delegate int goblinHP(int hp);
         public delegate int goblinDamage(int damage);
-        public Goblin (Enemy.xPos, Enemy.yPos, int Hp, int Damage) //2.5 ?
+        Del handler = Goblin;
+        public Goblin (int X, int Y) //2.5 ?
         {
-            hp = Hp;
-            damage = Damage;
+            //hp = Hp;
+            //damage = Damage;
+            x = X;
+            y = Y;
+
         }
         public override ReturnMove()
         {
