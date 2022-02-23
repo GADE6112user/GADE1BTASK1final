@@ -27,6 +27,7 @@ namespace GADE1B2022
         public override ReturnMove()
         {
             // This method does not use the optional movement parameter. Instead, it randoms a direction for the goblin to move in, and checks that movement against the goblin’s vision array.If something is in the way(a Hero or a Wall for now), the random position should be rerolled.When a valid position is chosen, it is returned from the method.
+
         }
 
 

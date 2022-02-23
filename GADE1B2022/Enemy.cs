@@ -30,9 +30,9 @@ namespace GADE1B2022
             y = Y;
 
         }
-        public abstract override ToString()
+        public abstract override string ToString()
         {
-            return "EnemyClassName (1) at [x,y] (1) (X DMG) (1)"; //EnemyClassName at [X, Y] (Amount DMG) 
+            return charr.ToString() + " at [" + x + "," + y + "]" + enemyDamage.ToString();   //"EnemyClassName (1) at [x,y] (1) (X DMG) (1)"; //EnemyClassName at [X, Y] (Amount DMG) 
         }
     }
     
