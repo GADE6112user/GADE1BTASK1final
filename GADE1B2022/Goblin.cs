@@ -16,6 +16,7 @@ namespace GADE1B2022
         public delegate int goblinHP(int hp);
         public delegate int goblinDamage(int damage);
         Del handler = Goblin;
+        Random rand = new Random(4);
         public Goblin (int X, int Y) //2.5 ?
         {
             //hp = Hp;

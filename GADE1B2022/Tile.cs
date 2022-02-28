@@ -6,13 +6,7 @@ using System.Threading.Tasks;
 
 namespace GADE1B2022
 {
-    public enum TileType
-    {
-        Hero,
-        Enemy,
-        Gold,
-        Weapon
-    }
+
     public abstract class Tile
     {
         protected int x;
@@ -46,7 +40,13 @@ namespace GADE1B2022
             //this.TileType = tileType;
             ttype = (TileType)Enum.Parse(typeof(TileType), tileType.ToString());
         }
-
+        public enum TileType
+        {
+            Hero,
+            Enemy,
+            Gold,
+            Weapon
+        }
 
     }
 }
